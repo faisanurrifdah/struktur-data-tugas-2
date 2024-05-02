@@ -38,3 +38,23 @@ class Peta:
             #hapus kota 1 di list kota2
             self.cityList[kota2].remove(kota1)
             #hapus kota 2 di list kota1
+            self.cityList[kota1].remove(kota2)
+            return True
+        return False
+        
+
+peta_jepang = Peta()
+peta_jepang.tambahkanKota("Tokyo")
+peta_jepang.tambahkanKota("Okayama")
+peta_jepang.tambahkanKota("Oita")
+peta_jepang.tambahkanKota("Kitakyushu")
+peta_jepang.tambahkanKota("Matsuyama")
+peta_jepang.tambahkanKota("Osaka")
+peta_jepang.tambahkanKota("Nagoya")
+peta_jepang.tambahkanKota("Hamamatsu")
+peta_jepang.tambahkanKota("Nagano")
+peta_jepang.tambahkanKota("Kanazawa")
+
+# Tambahkan jalan antara kota secara terpisah
+print('----------Sebelum----------')
+peta_jepang.tambahkanJalan("Tokyo", "Nagano")
